@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.nationwide-section {
+  width: 100%;
+  background: linear-gradient(135deg, #031438 0%, #061c4a 100%);
+  padding: 40px 24px;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.nationwide-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .nationwide-container {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+  }
+}
+
+/* Left Map Graphic Styling */
+.map-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.us-map-img {
+  width: 100%;
+  max-width: 625px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4)) brightness(1.2) contrast(1.1);
+  opacity: 0.9;
+}
+
+/* .map-overlay-glow {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(29, 78, 216, 0.35) 0%, rgba(3, 20, 56, 0) 70%);
+  pointer-events: none;
+} */
+
+/* Right Content Area */
+.nationwide-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nationwide-subtitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #d90429;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.nationwide-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 768px) {
+  .nationwide-content h2 {
+    font-size: 2.8rem;
+  }
+}
+
+.nationwide-content p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+/* Regions Grid Layout */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px 20px;
+}
+
+@media (min-width: 480px) {
+  .regions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Glassmorphism Region Buttons */
+.region-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0px;
+  padding: 14px 18px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.red-accent-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #d90429;
+  transition: width 0.3s ease;
+}
+
+.region-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.region-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.region-card:hover .red-accent-bar {
+  width: 8px;
+}
+
+.region-card:hover .region-name {
+  transform: translateX(4px);
+}

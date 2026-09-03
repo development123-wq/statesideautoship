@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.faq-section {
+  width: 100%;
+  padding: 40px 24px 60px 24px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* Header */
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-subtitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #d90429;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.faq-header h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #0b1e48;
+  line-height: 1.25;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .faq-header h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Accordion List */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width:960px;
+  margin:auto;
+}
+
+/* FAQ Item Container */
+.faq-item {
+  background-color: #f1f3f5;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #cbd5e1;
+}
+
+.faq-item.active {
+  background-color: #ffffff;
+  border-color: #0b1e48;
+  box-shadow: 0 4px 20px rgba(11, 30, 72, 0.06);
+}
+
+/* Question Button */
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 16px;
+}
+
+.faq-question-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0b1e48;
+  line-height: 1.4;
+}
+
+/* Plus/Minus Circular Toggle Icon */
+.faq-toggle-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #0b1e48;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-item.active .faq-toggle-icon {
+  background-color: #d90429;
+  transform: rotate(90deg);
+}
+
+.icon-bar {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-bar.horizontal {
+  width: 14px;
+  height: 2px;
+}
+
+.icon-bar.vertical {
+  width: 2px;
+  height: 14px;
+}
+
+.faq-item.active .icon-bar.vertical {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+/* Smooth Height Expand Animation */
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item.active .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer-content {
+  overflow: hidden;
+}
+
+.faq-answer-content p {
+  padding: 0 28px 24px 28px;
+  margin: 0;
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.65;
+}
+/* Bada CTA Banner Container */
+.faq-cta-banner.large-banner {
+  margin-top: 60px;
+  width: 100%;
+  min-height: 220px; /* Container height badhane ke liye */
+  padding: 60px 50px; /* Vertical aur horizontal spacing badhayi hai */
+  background: linear-gradient(rgba(10, 34, 64, 0.88), rgba(10, 34, 64, 0.88)),
+              url("/bg-image.png") center/cover no-repeat;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-cta-content h2 {
+  font-size: 2.5rem; /* Text size bada */
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.faq-cta-content p {
+  color: #d1d5db;
+  font-size: 1.125rem;
+}
+
+.faq-cta-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Buttons Styling */
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+  background: #d60000;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #b80000;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 900px) {
+  .faq-cta-banner.large-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    padding: 40px 24px;
+    min-height: auto;
+  }
+  
+  .faq-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-secondary,
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}

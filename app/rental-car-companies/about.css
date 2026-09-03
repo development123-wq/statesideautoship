@@ -1,0 +1,312 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 45, 87, 0.96),
+      rgba(6, 45, 87, 0.78),
+      rgba(6, 45, 87, 0.35)
+    ),
+    url("/about-banner.jpg") center / cover no-repeat;
+
+  color: #ffffff;
+}
+
+.about-subtitle {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  color: #d60000;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-hero h1 {
+  max-width: 750px;
+  margin: 0 0 20px;
+
+  font-size: 58px;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.about-hero h1 span {
+  color: #ffffff;
+}
+
+.about-hero p {
+  max-width: 650px;
+  margin: 0 0 30px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 190px;
+  padding: 14px 25px;
+
+  background: #d60000;
+  color: #ffffff;
+
+  border-radius: 30px;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.about-btn:hover {
+  background: #b90000;
+  transform: translateY(-2px);
+}
+
+.about-btn span {
+  font-size: 22px;
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+========================================= */
+
+.about-content {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+
+/* Image */
+
+.about-image {
+  width: 100%;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: 500px;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Text */
+
+.about-text h2 {
+  margin: 0 0 20px;
+
+  color: #062d57;
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.about-text > p {
+  margin: 0 0 15px;
+
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.feature-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d60000;
+  color: #ffffff;
+
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.feature-item h3 {
+  margin: 0 0 5px;
+
+  color: #062d57;
+  font-size: 17px;
+}
+
+.feature-item p {
+  margin: 0;
+
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+  padding: 80px 0;
+
+  text-align: center;
+
+  background: #062d57;
+  color: #ffffff;
+}
+
+.about-cta h2 {
+  margin: 0 0 15px;
+
+  font-size: 42px;
+}
+
+.about-cta p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    min-height: 420px;
+  }
+
+  .about-hero h1 {
+    font-size: 45px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-image img {
+    height: 400px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-container {
+    padding: 0 18px;
+  }
+
+  .about-hero {
+    min-height: 430px;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-hero p {
+    font-size: 16px;
+  }
+
+  .about-content {
+    padding: 65px 0;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 34px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-cta {
+    padding: 60px 0;
+  }
+
+  .about-cta h2 {
+    font-size: 32px;
+  }
+
+}
