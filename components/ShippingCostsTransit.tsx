@@ -36,34 +36,41 @@ export default function ShippingCostsTransit({
   return (
     <section style={{ width:"100%", padding:"0px 20px 60px 20px", background:"#f8fafc", fontFamily:"'Inter', sans-serif", boxSizing:"border-box" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap');
-     .tabBtn{transition:all.25s ease; color:#475569; background:transparent; border:none}
-     .tabBtn.activeTab{background:#062d57!important; color:#ffffff!important; box-shadow:0 6px 16px rgba(6,45,87,.25)}
-     .shipRow{transition:all.2s ease}
-     .shipRow:hover{background:#f1f5f9!important; transform:translateX(3px)}
-     .transitBox{transition:all.25s ease}
-     .transitBox:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(6,45,87,.10); border-color:#062d57!important}
-        @media(max-width:700px){.shipHead,.shipRow{grid-template-columns:1fr 1fr!important}.shipHead div:last-child,.shipRow div:last-child{display:none}}
+       .tabBtn{transition:all.25s ease; color:#475569; background:transparent; border:none}
+       .tabBtn.activeTab{background:#0b1e48!important; color:#ffffff!important; box-shadow:0 6px 16px rgba(11,30,72,.25)}
+       .shipRow{transition:all.2s ease}
+       .shipRow:hover{background:#f1f5f9!important; transform:translateX(3px)}
+       .transitBox{transition:all.25s ease}
+       .transitBox:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(11,30,72,.10); border-color:#0b1e48!important}
+       .sct-title{color:#0b1e48!important;font-size:44px!important;font-weight:800!important;line-height:1.15!important;margin:12px 0 8px!important}
+       .sct-subtitle{color:#475569!important;font-size:16px!important;line-height:1.6!important;margin:0!important;max-width:460px!important}
+        @media(max-width:900px){.sct-header{flex-direction:column!important;align-items:flex-start!important}}
+        @media(max-width:700px){
+         .shipHead,.shipRow{grid-template-columns:1fr 1fr!important}
+         .shipHead div:last-child,.shipRow div:last-child{display:none}
+         .sct-title{font-size:25px!important;line-height:1.25!important}
+         .sct-subtitle{font-size:13px!important}
+        }
       `}</style>
       <div style={{ maxWidth:"1300px", margin:"0 auto" }}>
-        <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-end", gap:"20px", flexWrap:"wrap", marginBottom:"28px" }}>
-          <div><h2 style={{ fontSize:"2.8rem", fontWeight:800, color:"#062d57", margin:"12px 0 8px", lineHeight:1.15 }}>{title}</h2><p style={{ fontSize:"16px", color:"#64748b", margin:0, lineHeight:1.6, maxWidth:"460px" }}>{subtitle}</p></div>
+        <div className="sct-header" style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-end", gap:"20px", flexWrap:"wrap", marginBottom:"28px" }}>
+          <div><h2 className="sct-title">{title}</h2><p className="sct-subtitle">{subtitle}</p></div>
           <div style={{ background:"#ffffff", border:"1px solid #e2e8f0", padding:"5px", borderRadius:"100px", display:"inline-flex", gap:"4px" }}>
             <button onClick={() => setTab("ship")} className={`tabBtn ${tab==="ship"?"activeTab":""}`} style={{ padding:"10px 22px", borderRadius:"100px", cursor:"pointer", fontWeight:700, fontSize:"13px" }}>Shipping Distance</button>
             <button onClick={() => setTab("transit")} className={`tabBtn ${tab==="transit"?"activeTab":""}`} style={{ padding:"10px 22px", borderRadius:"100px", cursor:"pointer", fontWeight:700, fontSize:"13px" }}>Transit Time</button>
           </div>
         </div>
-        <div style={{ background:"#ffffff", border:"1px solid #e2e8f0", borderRadius:"20px", overflow:"hidden", boxShadow:"0 10px 30px rgba(6,45,87,.06)" }}>
+        <div style={{ background:"#ffffff", border:"1px solid #e2e8f0", borderRadius:"20px", overflow:"hidden", boxShadow:"0 10px 30px rgba(11,30,72,.06)" }}>
           {tab==="ship"? (
             <>
-              <div style={{ padding:"18px 24px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:"1px solid #eef2f7" }}><h3 style={{ margin:0, fontSize:"17px", fontWeight:800, color:"#062d57" }}>Average Shipping Costs</h3><span style={{ fontSize:"11px", fontWeight:700, background:"#f1f5f9",color:"rgb(6, 45, 87)", border:"1px solid #e2e8f0", padding:"6px 10px", borderRadius:"100px" }}>{shipData.length} POPULAR ROUTES</span></div>
-              <div className="shipHead" style={{ display:"grid", gridTemplateColumns:"1.2fr 1.2fr 0.8fr 0.8fr", gap:"10px", padding:"12px 24px", background:"#f8fafc", fontSize:"11px", fontWeight:800, color:"#062d57", borderBottom:"1px solid #e2e8f0" }}><div>ORIGIN</div><div>DESTINATION</div><div>AVERAGE COST</div><div>COST PER MILE</div></div>
-              {shipData.map((r,i)=>(<div key={i} className="shipRow" style={{ display:"grid", gridTemplateColumns:"1.2fr 1.2fr 0.8fr 0.8fr", gap:"10px", padding:"16px 24px", fontSize:"14px", borderTop:"1px solid #f1f5f9", background: i%2===0? "#fff":"#fcfdff" }}><div style={{ fontWeight:600, color:"#062d57" }}>{r[0]}</div><div style={{ color:"#64748b" }}>{r[1]}</div><div style={{ fontWeight:800, color:"#062d57" }}>{r[2]}</div><div><span style={{ background:"#062d57", color:"#fff", padding:"5px 11px", borderRadius:"100px", fontSize:"12px", fontWeight:700 }}>{r[3]}</span></div></div>))}
+              <div style={{ padding:"18px 24px", display:"flex", justifyContent:"space-between", alignItems:"center", borderBottom:"1px solid #eef2f7" }}><h3 style={{ margin:0, fontSize:"17px", fontWeight:800, color:"#0b1e48" }}>Average Shipping Costs</h3><span style={{ fontSize:"11px", fontWeight:700, background:"#f1f5f9",color:"#0b1e48", border:"1px solid #e2e8f0", padding:"6px 10px", borderRadius:"100px" }}>{shipData.length} POPULAR ROUTES</span></div>
+              <div className="shipHead" style={{ display:"grid", gridTemplateColumns:"1.2fr 1.2fr 0.8fr 0.8fr", gap:"10px", padding:"12px 24px", background:"#f8fafc", fontSize:"11px", fontWeight:800, color:"#0b1e48", borderBottom:"1px solid #e2e8f0" }}><div>ORIGIN</div><div>DESTINATION</div><div>AVERAGE COST</div><div>COST PER MILE</div></div>
+              {shipData.map((r,i)=>(<div key={i} className="shipRow" style={{ display:"grid", gridTemplateColumns:"1.2fr 1.2fr 0.8fr 0.8fr", gap:"10px", padding:"16px 24px", fontSize:"14px", borderTop:"1px solid #f1f5f9", background: i%2===0? "#fff":"#fcfdff" }}><div style={{ fontWeight:600, color:"#0b1e48" }}>{r[0]}</div><div style={{ color:"#475569" }}>{r[1]}</div><div style={{ fontWeight:800, color:"#0b1e48" }}>{r[2]}</div><div><span style={{ background:"#0b1e48", color:"#fff", padding:"5px 11px", borderRadius:"100px", fontSize:"12px", fontWeight:700 }}>{r[3]}</span></div></div>))}
             </>
           ) : (
             <>
-              <div style={{ padding:"18px 24px", textAlign:"center", borderBottom:"1px solid #eef2f7" }}><h3 style={{ margin:0, fontSize:"17px", fontWeight:800, color:"#062d57" }}>Average Transit Times</h3></div>
-              <div style={{ padding:"20px", display:"grid", gap:"10px" }}>{transitData.map((r,i)=>(<div key={i} className="transitBox" style={{ background: i%2===0? "#fff":"#f8fafc", border:"1px solid #e2e8f0", borderRadius:"10px", padding:"16px 20px", display:"flex", justifyContent:"space-between" }}><div style={{ fontSize:"14px", fontWeight:500, color:"#062d57" }}>{r[0]}</div><span style={{ fontSize:"13px", fontWeight:700, color:"#d60000" }}>{r[1]}</span></div>))}</div>
+              <div style={{ padding:"18px 24px", textAlign:"center", borderBottom:"1px solid #eef2f7" }}><h3 style={{ margin:0, fontSize:"17px", fontWeight:800, color:"#0b1e48" }}>Average Transit Times</h3></div>
+              <div style={{ padding:"20px", display:"grid", gap:"10px" }}>{transitData.map((r,i)=>(<div key={i} className="transitBox" style={{ background: i%2===0? "#fff":"#f8fafc", border:"1px solid #e2e8f0", borderRadius:"10px", padding:"16px 20px", display:"flex", justifyContent:"space-between" }}><div style={{ fontSize:"16px", fontWeight:500, color:"#0b1e48" }}>{r[0]}</div><span style={{ fontSize:"13px", fontWeight:700, color:"#d60000" }}>{r[1]}</span></div>))}</div>
             </>
           )}
         </div>

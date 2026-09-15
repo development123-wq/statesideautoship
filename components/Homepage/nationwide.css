@@ -7,6 +7,7 @@
   font-family: 'Inter', sans-serif;
   color: #ffffff;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .nationwide-container {
@@ -43,14 +44,6 @@
   opacity: 0.9;
 }
 
-/* .map-overlay-glow {
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(circle, rgba(29, 78, 216, 0.35) 0%, rgba(3, 20, 56, 0) 70%);
-  pointer-events: none;
-} */
-
 /* Right Content Area */
 .nationwide-content {
   display: flex;
@@ -68,23 +61,18 @@
 }
 
 .nationwide-content h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.25;
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.15 !important;
   margin-bottom: 18px;
-}
-
-@media (min-width: 768px) {
-  .nationwide-content h2 {
-    font-size: 2.8rem;
-  }
+  letter-spacing: -0.6px;
 }
 
 .nationwide-content p {
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.6;
+  font-size: 16px !important;
+  color: #cbd5e1 !important;
+  line-height: 1.7 !important;
   margin-bottom: 36px;
   max-width: 520px;
 }
@@ -128,7 +116,7 @@
 }
 
 .region-name {
-  font-size: 1.05rem;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   margin-left: 10px;
@@ -149,4 +137,56 @@
 
 .region-card:hover .region-name {
   transform: translateX(4px);
+}
+
+/* --- FULLY RESPONSIVE --- */
+@media (max-width: 991px) {
+  .nationwide-section {
+    padding: 36px 20px !important;
+  }
+  .nationwide-container {
+    gap: 32px !important;
+  }
+  .map-container {
+    order: 2;
+  }
+  .nationwide-content {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .nationwide-section {
+    padding: 32px 14px !important;
+  }
+  .nationwide-content h2 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+  .nationwide-content p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 22px !important;
+    max-width: 100% !important;
+  }
+  .us-map-img {
+    max-width: 100% !important;
+  }
+  .regions-grid {
+    gap: 10px !important;
+    grid-template-columns: 1fr !important;
+  }
+  .region-card {
+    padding: 12px 14px !important;
+  }
+  .region-name {
+    font-size: 13px !important;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+  .regions-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }

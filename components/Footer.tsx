@@ -27,11 +27,8 @@ export default function Footer(): React.ReactElement {
             </div>
 
             <p className="footer-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since 1966, when designers at Letraset and James Mosley, the
-              librarian at St Bride Printing Library in London, took dummy text
-              for Letraset's Body Type sheets.
+             We are a trusted nationwide auto transport company providing safe, affordable, and on-time vehicle shipping across all 50 states. Fully licensed, insured, and committed to hassle-free door-to-door delivery.
+
             </p>
 
             {/* Social Icons */}
@@ -185,6 +182,13 @@ export default function Footer(): React.ReactElement {
                <li>
                 <a href="/contact-us">
                   <span>Customer</span>
+                  <ArrowUpRight className="link-arrow" size={14} />
+                </a>
+              </li>
+
+              <li>
+                <a href="/blogs">
+                  <span>Blogs</span>
                   <ArrowUpRight className="link-arrow" size={14} />
                 </a>
               </li>

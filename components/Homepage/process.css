@@ -7,6 +7,7 @@
   background-color: #031b4e;
   color: #ffffff;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 .process-container {
@@ -18,7 +19,6 @@
 /* =========================
    Header
 ========================= */
-
 .process-header {
   max-width: 850px;
   margin: 0 auto 65px;
@@ -40,22 +40,22 @@
 
 .process-header h2 {
   margin: 0 0 14px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 49px;
-  letter-spacing: 0;
+  font-size: 44px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.6px;
   text-align: center;
 }
 
 .process-header p {
   margin: 0;
-  color: #ffffff;
+  color: #cbd5e1 !important;
   font-family: "Instrument Sans", sans-serif;
-  font-size: 17px;
+  font-size: 16px !important;
   font-weight: 400;
-  line-height: 164%;
+  line-height: 1.7 !important;
   letter-spacing: 0;
   text-align: center;
 }
@@ -63,7 +63,6 @@
 /* =========================
    Steps Grid
 ========================= */
-
 .process-steps {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -81,26 +80,14 @@
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.step-item:nth-child(1) {
-  animation-delay: 0.15s;
-}
-
-.step-item:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.step-item:nth-child(3) {
-  animation-delay: 0.45s;
-}
-
-.step-item:nth-child(4) {
-  animation-delay: 0.6s;
-}
+.step-item:nth-child(1) { animation-delay: 0.15s; }
+.step-item:nth-child(2) { animation-delay: 0.3s; }
+.step-item:nth-child(3) { animation-delay: 0.45s; }
+.step-item:nth-child(4) { animation-delay: 0.6s; }
 
 /* =========================
    Step Circle
 ========================= */
-
 .step-circle-wrapper {
   position: relative;
   display: flex;
@@ -128,21 +115,12 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
-  box-shadow:
-    0 0 0 2px #d90429,
-    0 8px 18px rgba(217, 4, 41, 0.35);
+  box-shadow: 0 0 0 2px #d90429, 0 8px 18px rgba(217, 4, 41, 0.35);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.step-item:hover .step-circle {
-  transform: scale(1.1);
-}
-
-.circle-number {
-  position: relative;
-  z-index: 2;
-}
-
+.step-item:hover .step-circle { transform: scale(1.1); }
+.circle-number { position: relative; z-index: 2; }
 .circle-pulse {
   position: absolute;
   inset: -7px;
@@ -155,7 +133,6 @@
 /* =========================
    Moving Dashed Line
 ========================= */
-
 .step-line-container {
   position: absolute;
   top: 50%;
@@ -174,49 +151,37 @@
   left: 0;
   width: 200%;
   height: 2px;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.72) 0,
-    rgba(255, 255, 255, 0.72) 7px,
-    transparent 7px,
-    transparent 14px
-  );
+  background-image: repeating-linear-gradient(to right, rgba(255,255,255,0.72) 0, rgba(255,255,255,0.72) 7px, transparent 7px, transparent 14px);
   animation: moveLine 2.5s linear infinite;
 }
 
-/* Last step ke baad line nahi hogi */
-.step-item:last-child .step-line-container {
-  display: none;
-}
+.step-item:last-child .step-line-container { display: none; }
 
 /* =========================
    Step Text
 ========================= */
-
 .step-title {
   margin: 0 0 8px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 1.4;
   letter-spacing: 0;
   text-align: center;
   transition: color 0.3s ease;
 }
 
-.step-item:hover .step-title {
-  color: #f87171;
-}
+.step-item:hover .step-title { color: #f87171; }
 
 .step-description {
   max-width: 265px;
   margin: 0 auto;
-  color: #ffffff;
+  color: #cbd5e1 !important;
   font-family: "Instrument Sans", sans-serif;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 400;
-  line-height: 135%;
+  line-height: 1.6 !important;
   letter-spacing: 0;
   text-align: center;
 }
@@ -224,138 +189,34 @@
 /* =========================
    Animations
 ========================= */
-
-@keyframes moveLine {
-  from {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulseGlow {
-  0% {
-    opacity: 0.75;
-    transform: scale(0.92);
-  }
-
-  60% {
-    opacity: 0;
-    transform: scale(1.16);
-  }
-
-  100% {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-}
+@keyframes moveLine { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulseGlow { 0% { opacity: 0.75; transform: scale(0.92); } 60% { opacity: 0; transform: scale(1.16); } 100% { opacity: 0; transform: scale(0.92); } }
 
 /* =========================
    Tablet
 ========================= */
-
 @media (max-width: 1023px) {
-  .process-section {
-    padding: 75px 24px;
-  }
-
-  .process-header {
-    margin-bottom: 50px;
-  }
-
-  .process-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 55px 30px;
-  }
-
-  .step-line-container {
-    display: none;
-  }
-
-  .step-title {
-    font-size: 22px;
-    line-height: 34px;
-  }
+  .process-section { padding: 75px 24px; }
+  .process-header { margin-bottom: 50px; }
+  .process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 55px 30px; }
+  .step-line-container { display: none; }
+  .step-title { font-size: 20px; line-height: 1.4; }
 }
 
 /* =========================
-   Mobile
+   Mobile - FULLY RESPONSIVE
 ========================= */
-
 @media (max-width: 575px) {
-  .process-section {
-    padding: 60px 18px;
-  }
-
-  .process-header {
-    margin-bottom: 42px;
-  }
-
-  .process-subtitle {
-    font-size: 11px;
-  }
-
-  .process-header h2 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .process-header p {
-    font-size: 15px;
-    line-height: 1.64;
-  }
-
-  .process-steps {
-    grid-template-columns: 1fr;
-    gap: 42px;
-  }
-
-  .step-circle-wrapper {
-    height: 68px;
-    margin-bottom: 14px;
-  }
-
-  .step-circle {
-    width: 62px;
-    height: 62px;
-    font-size: 18px;
-  }
-
-  .step-title {
-    margin-bottom: 7px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .step-description {
-    max-width: 290px;
-    font-size: 15px;
-    line-height: 1.35;
-  }
+  .process-section { padding: 40px 14px; }
+  .process-header { margin-bottom: 32px; }
+  .process-subtitle { font-size: 11px; }
+  .process-header h2 { font-size: 25px !important; line-height: 1.25 !important; }
+  .process-header p { font-size: 13px !important; line-height: 1.6 !important; padding: 0 6px; }
+  .process-steps { grid-template-columns: 1fr; gap: 32px; }
+  .step-circle-wrapper { height: 68px; margin-bottom: 12px; }
+  .step-circle { width: 62px; height: 62px; font-size: 18px; }
+  .step-title { margin-bottom: 6px; font-size: 17px; line-height: 1.4; }
+  .step-description { max-width: 290px; font-size: 13px !important; line-height: 1.6 !important; }
 }

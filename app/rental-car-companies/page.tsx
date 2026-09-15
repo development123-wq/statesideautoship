@@ -145,7 +145,7 @@ export default function RentalFleetPage() {
               </span>
             </h1>
 
-            <p className="mt-5 max-w-2xl text-[16px] leading-7 text-slate-300 sm:text-[17px]">
+            <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[#ffffff] sm:text-[16px]">
               Managing a car rental fleet requires constant movement of
               vehicles between locations. We simplify logistics with
               nationwide coverage.
@@ -202,7 +202,7 @@ export default function RentalFleetPage() {
             </div>
 
             <div className="space-y-4 p-7 sm:p-10">
-              <p className="text-[15px] leading-7 text-slate-600 sm:text-[16px]">
+              <p className="text-[13px] md:text-[16px] leading-7 text-slate-600 sm:text-[16px]">
                 Managing a car rental fleet requires constant movement of
                 vehicles between locations, seasonal repositioning, or
                 transfers for maintenance and sales. United Freeway
@@ -212,14 +212,14 @@ export default function RentalFleetPage() {
                 condition.
               </p>
 
-              <p className="text-[15px] leading-7 text-slate-600 sm:text-[16px]">
+              <p className="text-[13px] md:text-[16px] leading-7 text-slate-600 sm:text-[16px]">
                 By handling scheduling, paperwork, insurance verification, and
                 carrier coordination, the company removes the burden of
                 managing multiple carriers and lets your team focus on
                 operations, customer service, and fleet management.
               </p>
 
-              <p className="text-[15px] leading-7 text-slate-600 sm:text-[16px]">
+              <p className="text-[13px] md:text-[16px] leading-7 text-slate-600 sm:text-[16px]">
                 Rental companies also benefit from the flexibility and
                 expertise that United Freeway Transportation provides. Whether
                 transferring multiple vehicles between branches, responding to
@@ -235,16 +235,16 @@ export default function RentalFleetPage() {
         {/* ================= BENEFITS ================= */}
         <section>
 
-          <div className="mx-auto mb-8 max-w-2xl text-center">
+          <div className="mx-auto mb-8 max-w-5xl text-center">
             <span className="inline-flex rounded-full border border-[#CA0003]/15 bg-[#CA0003]/5 px-3 py-1 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#CA0003]">
               Why Choose Us
             </span>
 
-            <h2 className="mt-3 text-2xl font-black tracking-tight text-[#01162F] sm:text-3xl">
+            <h2 className="mt-3 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[42px]">
               Why Car Rental Companies Choose United Freeway Transportation
             </h2>
 
-            <p className="mt-3 text-[15px] leading-6 text-slate-500">
+            <p className="mt-3 text-[13px] md:text-[16px] leading-6 text-[#475569]">
               Reliable fleet transportation backed by nationwide coverage,
               flexible logistics, and dedicated support.
             </p>
@@ -273,7 +273,7 @@ export default function RentalFleetPage() {
                     {benefit.title}
                   </h3>
 
-                  <p className="mt-3 text-[14px] leading-6 text-slate-500">
+                  <p className="mt-3 text-[13px] md:text-[14px] leading-6 text-slate-500">
                     {benefit.description}
                   </p>
 
@@ -320,7 +320,7 @@ export default function RentalFleetPage() {
               Advanced and Reliable Cost Calculator
             </h2>
 
-            <p className="mx-auto mt-4 max-w-xl text-[15px] leading-7 text-slate-300">
+            <p className="mx-auto mt-4 max-w-xl text-[13px] md:text-[16px] leading-7 text-slate-300">
               Generates accurate transport estimates in seconds. Helps plan
               transport budgets efficiently without waiting for multiple
               quotes.
@@ -344,18 +344,18 @@ export default function RentalFleetPage() {
         <div className="mx-auto max-w-[1050px] px-5 sm:px-8">
 
           {/* Header */}
-          <div className="mx-auto mb-10 max-w-2xl text-center">
+          <div className="mx-auto mb-10 max-w-5xl text-center">
 
             <span className="inline-flex items-center gap-2 rounded-full border border-[#CA0003]/15 bg-[#CA0003]/5 px-3 py-1 text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#CA0003]">
               <ShieldCheck className="h-3.5 w-3.5" />
               Got Questions?
             </span>
 
-            <h2 className="mt-4 text-2xl font-black tracking-tight text-[#01162F] sm:text-3xl">
+            <h2 className="mt-4 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
               Fleet Logistics Frequently Asked Questions
             </h2>
 
-            <p className="mt-3 text-[14px] leading-6 text-slate-500 sm:text-[15px]">
+            <p className="mt-3 text-[13px] leading-6 text-[#475569] sm:text-[16px]">
               Everything you need to know about our corporate car transport
               and fleet relocations.
             </p>
@@ -429,7 +429,7 @@ export default function RentalFleetPage() {
                     <div className="overflow-hidden">
 
                       <div className="border-t border-slate-100 px-5 pb-6 pt-4 sm:px-6 sm:pl-[76px]">
-                        <p className="text-[14px] leading-7 text-slate-500 sm:text-[15px]">
+                        <p className="text-[13px] leading-7 text-slate-500 sm:text-[16px]">
                           {faq.a}
                         </p>
                       </div>

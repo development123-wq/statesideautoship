@@ -44,10 +44,10 @@ export default function CarrierPage() {
               <span className="w-2 h-2 rounded-full bg-[#CA0003] animate-pulse"></span>
               Dispatch System
             </span>
-            <h1 className="text-4xl sm:text-5xl font-black text-[#02254F] tracking-tight leading-tight">
+            <h1 className="text-[25px] sm:text-[44px] font-black text-[#0b1e48] tracking-tight leading-tight">
               Request a Load
             </h1>
-            <p className="text-slate-500 text-base mt-3 max-w-lg">
+            <p className="text-[#475569] text-base mt-3 max-w-lg text-[13px] md:text-[16px]">
               Complete the dispatch details below to receive instant load confirmation and priority routing.
             </p>
           </div>
@@ -226,10 +226,10 @@ export default function CarrierPage() {
             <span className="inline-block text-[11px] uppercase font-bold tracking-widest text-[#CA0003] bg-white px-3 py-1 rounded-full mb-3 shadow-sm">
               Carrier Priority
             </span>
-            <h2 className="text-2xl font-bold text-white tracking-wide">
+            <h2 className="text-[25px] md:text-[30px] font-bold text-white tracking-wide">
               Auto Transport Logistics
             </h2>
-            <p className="text-blue-200 text-sm mt-2 leading-relaxed">
+            <p className="text-blue-200 text-[13px] md:text-[16px] mt-2 leading-relaxed">
               Nationwide vehicle haulage network with guaranteed capacity and live telemetry.
             </p>
           </div>
@@ -271,10 +271,10 @@ export default function CarrierPage() {
           <span className="text-xs font-extrabold uppercase tracking-widest text-[#CA0003] bg-[#CA0003]/10 px-3.5 py-1.5 rounded-full">
             Our Key Advantages
           </span>
-          <h2 className="text-3xl font-extrabold text-[#02254F] tracking-tight sm:text-4xl mt-3">
+          <h2 className="text-[25px] font-extrabold text-[#0b1e48] tracking-tight sm:text-[44px] mt-3">
             Why Top Carriers Choose Us
           </h2>
-          <p className="text-slate-500 mt-3 text-base">
+          <p className="text-[#475569] sm:text-[16px] text-[13px] mt-3 text-base">
             Streamlined operations, guaranteed payments, and direct access to premium freight.
           </p>
         </div>
@@ -286,7 +286,7 @@ export default function CarrierPage() {
               01
             </div>
             <h3 className="text-2xl font-bold text-[#02254F]">Dedicated Support</h3>
-            <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-600 leading-relaxed sm:text-[16px] text-[13px]">
               Our Carrier Relations team puts your needs first, taking the time to understand your business requirements and preferences. Work smarter and faster with a dedicated account specialist behind every dispatch.
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function CarrierPage() {
               02
             </div>
             <h3 className="text-2xl font-bold text-[#02254F]">Quick Access to Loads</h3>
-            <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-600 leading-relaxed sm:text-[16px] text-[13px]">
               Direct integration with SuperDispatch TMS allows seamless access to thousands of vehicle loads coast-to-coast. Instantly accept, track, and manage shipments right from your mobile dashboard.
             </p>
           </div>
@@ -326,7 +326,7 @@ export default function CarrierPage() {
               03
             </div>
             <h3 className="text-2xl font-bold text-[#02254F]">On-Time Guaranteed Payment</h3>
-            <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-600 leading-relaxed sm:text-[16px] text-[13px]">
               Choose flexible payout terms including QuickPay and Direct Deposit. Get funds delivered directly to your account in as little as 2 business days with zero hidden processing fees.
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function CarrierPage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#CA0003]/20 rounded-full blur-3xl pointer-events-none" />
         
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
+          <h2 className="text-[25px] font-black tracking-tight sm:text-[44px]">
             Ready to Move Your Next Load?
           </h2>
           <p className="text-blue-100 text-sm sm:text-base">

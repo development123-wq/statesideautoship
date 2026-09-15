@@ -24,18 +24,31 @@ export default function Reviews() {
 
   return (
     <section style={{ background: "#fff", padding: "40px 20px" }}>
-      <div style={{ maxWidth: "1300px", margin: "0 auto", width: "100%" }}>
+      <style>{`
+       .reviews-title{color:#0b1e48!important;font-size:44px!important;font-weight:800!important;line-height:1.2!important;margin:0 0 12px!important}
+       .reviews-desc{color:#475569!important;font-size:16px!important;max-width:650px!important;margin:0 auto!important;line-height:1.7!important}
+       .review-card{flex:0 0 calc(25% - 12px);scroll-snap-align:start;background:#fff;border:1px solid #e9eef3;border-radius:16px;padding:18px;box-shadow:0 2px 12px rgba(6,45,87,0.06)}
+       .review-text{font-size:16px!important;color:#475569!important;line-height:1.6!important;margin:0 0 6px!important;min-height:72px!important}
+        @media (max-width: 1100px) {.review-card { flex: 0 0 calc(33.333% - 11px)!important; } }
+        @media (max-width: 800px) {.review-card { flex: 0 0 calc(50% - 8px)!important; } }
+        @media (max-width: 600px) {
+         .reviews-title{font-size:25px!important;line-height:1.25!important}
+         .reviews-desc{font-size:13px!important;line-height:1.6!important;padding:0 10px!important}
+         .review-card{flex:0 0 88%!important}
+         .review-text{font-size:13px!important}
+        }
+      `}</style>
 
-        {/* YOUR BRAND HEADING */}
+      <div style={{ maxWidth: "1300px", margin: "0 auto", width: "100%" }}>
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
-          <h2 style={{ fontSize: "2.8rem", fontWeight: "800", color: "#0b1e48", margin: "0 0 12px", lineHeight: "1.2" }}>What Our Customers Say</h2>
-          <p style={{ fontSize: "16px", color: "#475569", maxWidth: "650px", margin: "0 auto", lineHeight: "1.7" }}>Read reviews from satisfied customers who trusted us with their vehicle transportation needs</p>
+          <h2 className="reviews-title">What Our Customers Say</h2>
+          <p className="reviews-desc">Read reviews from satisfied customers who trusted us with their vehicle transportation needs</p>
         </div>
 
         <div style={{ position: "relative" }}>
           <div ref={trackRef} style={{ display: "flex", gap: "16px", overflowX: "auto", scrollSnapType: "x mandatory", scrollbarWidth: "none", paddingBottom: "4px" }}>
             {REVIEWS.map((r, i) => (
-              <div key={i} style={{ flex: "0 0 calc(25% - 12px)", scrollSnapAlign: "start", background: "#fff", border: "1px solid #e9eef3", borderRadius: "16px", padding: "18px", boxShadow: "0 2px 12px rgba(6,45,87,0.06)" }}>
+              <div key={i} className="review-card">
                 <div style={{ display: "flex", gap: "10px", alignItems: "center", marginBottom: "12px" }}>
                   {r.img? <img src={r.img} alt="" style={{ width: "38px", height: "38px", borderRadius: "50%" }} /> : <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: r.bg, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700" }}>{r.letter}</div>}
                   <div>
@@ -44,7 +57,7 @@ export default function Reviews() {
                   </div>
                 </div>
                 <div style={{ color: "#f5b400", fontSize: "16px", marginBottom: "8px" }}>★★★★★</div>
-                <p style={{ fontSize: "15px", color: "#555", lineHeight: "1.6", margin: "0 0 6px", minHeight: "72px" }}>{r.text}</p>
+                <p className="review-text">{r.text}</p>
                 <button style={{ background: "none", border: "0", color: "#d60000", fontSize: "13px", fontWeight: "600", cursor: "pointer", padding: "0" }}>Read more</button>
               </div>
             ))}
@@ -57,14 +70,7 @@ export default function Reviews() {
         <div style={{ display: "flex", gap: "6px", justifyContent: "center", marginTop: "24px" }}>
           {REVIEWS.map((_, i) => <span key={i} onClick={() => scrollTo(i)} style={{ width: i === index? "18px" : "6px", height: "6px", borderRadius: "10px", background: i === index? "#062d57" : "#d1d5db", cursor: "pointer", transition: "all 0.3s" }}></span>)}
         </div>
-
       </div>
-
-      <style>{`
-        @media (max-width: 1100px) { div[style*="calc(25%"] { flex: 0 0 calc(33.333% - 11px)!important; } }
-        @media (max-width: 800px) { div[style*="calc(25%"] { flex: 0 0 calc(50% - 8px)!important; } }
-        @media (max-width: 520px) { div[style*="calc(25%"] { flex: 0 0 88%!important; } h2 { font-size: 2rem!important; } }
-      `}</style>
     </section>
   );
 }

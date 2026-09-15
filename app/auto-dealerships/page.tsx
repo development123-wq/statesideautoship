@@ -261,12 +261,12 @@ export default function DealershipsPage() {
                   Seamless Fleet Operations
                 </span>
 
-                <h2 className="mt-2 text-2xl font-black tracking-tight text-[#02254F] sm:text-3xl">
+                <h2 className="mt-2 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
                   Overcome Operational Obstacles
                 </h2>
               </div>
 
-              <p className="max-w-md text-[14px] leading-6 text-slate-500">
+              <p className="max-w-md text-[13px] md:text-[16px] leading-6 text-[#475569]">
                 Streamline dealership logistics through our centralized
                 network and eliminate dispatch bottlenecks.
               </p>
@@ -344,11 +344,11 @@ export default function DealershipsPage() {
               Built For Fleet Operators
             </span>
 
-            <h2 className="mt-3 text-2xl font-black tracking-tight text-[#02254F] sm:text-3xl">
+            <h2 className="mt-3 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
               Key Advantages for Dealerships
             </h2>
 
-            <p className="mt-3 text-[14px] leading-6 text-slate-500">
+            <p className="mt-3 text-[13px] md:text-[16px] leading-6 text-[#475569]">
               Everything your dealership needs to move inventory faster,
               safer, and more efficiently.
             </p>
@@ -385,7 +385,7 @@ export default function DealershipsPage() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-[14px] leading-6 text-slate-500">
+                  <p className="mt-3 text-[13px] md:text-[14px] leading-6 text-slate-500">
                     {item.description}
                   </p>
 
@@ -413,7 +413,7 @@ export default function DealershipsPage() {
           <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[#CA0003]/10 blur-3xl" />
           <div className="absolute -bottom-28 -left-20 h-72 w-72 rounded-full bg-blue-500/5 blur-3xl" />
 
-          <div className="relative z-10 mx-auto max-w-3xl px-6 py-12 text-center sm:px-10 sm:py-14">
+          <div className="relative z-10 mx-auto max-w-4xl px-6 py-12 text-center sm:px-10 sm:py-14">
 
             <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-[#CA0003] ring-1 ring-white/10">
               <Calculator className="h-6 w-6" />
@@ -423,11 +423,11 @@ export default function DealershipsPage() {
               Fast & Accurate Estimates
             </span>
 
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-white sm:text-3xl">
+            <h2 className="mt-2 text-[25px] font-black tracking-tight text-white sm:text-[44px]">
               Advanced & Reliable Cost Calculator
             </h2>
 
-            <p className="mx-auto mt-4 max-w-xl text-[15px] leading-7 text-slate-300">
+            <p className="mx-auto mt-4 max-w-2xl text-[13px] md:text-[16px] leading-7 text-white">
               Generate precise lane shipping estimates instantly. Streamline
               transport budgeting across multi-vehicle shipments without
               manual broker call delays.
@@ -457,11 +457,11 @@ export default function DealershipsPage() {
               Frequently Asked
             </span>
 
-            <h2 className="mt-4 text-2xl font-black tracking-tight text-[#02254F] sm:text-3xl">
+            <h2 className="mt-4 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
               Dealership Transport FAQs
             </h2>
 
-            <p className="mt-3 text-[14px] leading-6 text-slate-500">
+            <p className="mt-3 text-[13px] md:text-[16px] leading-6 text-[#475569]">
               Answers to common questions about dealership vehicle
               transportation and logistics.
             </p>

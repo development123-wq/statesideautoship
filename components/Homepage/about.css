@@ -2,6 +2,7 @@
   width: 100%;
   padding: 80px 24px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .about-container {
@@ -19,7 +20,6 @@
   }
 }
 
-/* Image Styling */
 .about-image-wrapper {
   width: 100%;
   overflow: hidden;
@@ -33,9 +33,9 @@
   object-fit: cover;
   display: block;
   border-radius: 30px;
+  height: 485px;
 }
 
-/* Content Styling */
 .about-tag {
   font-size: 0.85rem;
   font-weight: 800;
@@ -45,30 +45,24 @@
 }
 
 .about-content h2 {
-  font-size: 2.4rem;
+  font-size: 44px;
   font-weight: 800;
   color: #0b1e48;
-  line-height: 1.2;
+  line-height: 1.15;
   margin: 12px 0 18px 0;
-}
-
-@media (min-width: 768px) {
-  .about-content h2 {
-    font-size: 2.8rem;
-  }
+  letter-spacing: -0.6px;
 }
 
 .about-content p {
-  font-size: 0.95rem;
+  font-size: 16px;
   color: #475569;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 28px;
 }
 
-/* Features List (2 Columns) */
 .about-features {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   gap: 16px;
   margin-bottom: 36px;
 }
@@ -84,7 +78,7 @@
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 16px;
   color: #0b1e48;
 }
 
@@ -102,7 +96,6 @@
   flex-shrink: 0;
 }
 
-/* Button */
 .about-btn {
   display: inline-flex;
   align-items: center;
@@ -112,12 +105,67 @@
   padding: 14px 28px;
   border-radius: 50px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 15px;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .about-btn:hover {
   background-color: #a80000;
   transform: translateY(-1px);
+}
+
+/* --- FULLY RESPONSIVE FIXES --- */
+@media (max-width: 991px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+  .about-container {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 36px 16px;
+  }
+  .about-container {
+    gap: 24px;
+  }
+  .about-content h2 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+    margin: 8px 0 12px 0 !important;
+  }
+  .about-content p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+  }
+  .feature-item {
+    font-size: 13px !important;
+    gap: 8px !important;
+  }
+  .check-icon {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+  }
+  .about-image-wrapper,
+  .about-img {
+    border-radius: 18px !important;
+  }
+  .about-img {
+    max-height: 340px !important;
+  }
+  .about-features {
+    gap: 10px !important;
+    margin-bottom: 22px !important;
+  }
+  .about-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px !important;
+    font-size: 14px !important;
+  }
 }

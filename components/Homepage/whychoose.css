@@ -6,6 +6,7 @@
   background-color: #ffffff;
   font-family: 'Inter', sans-serif;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .why-choose-container {
@@ -30,23 +31,18 @@
 }
 
 .why-choose-header h2 {
-  font-size: 2.4rem;
+  font-size: 44px !important;
   font-weight: 800;
-  color: #0b1e48;
-  line-height: 1.25;
+  color: #0b1e48 !important;
+  line-height: 1.15;
   margin: 12px 0 16px 0;
-}
-
-@media (min-width: 768px) {
-  .why-choose-header h2 {
-    font-size: 2.8rem;
-  }
+  letter-spacing: -0.6px;
 }
 
 .why-choose-header p {
-  font-size: 1rem;
-  color: #64748b;
-  line-height: 1.6;
+  font-size: 16px !important;
+  color: #475569 !important;
+  line-height: 1.7;
 }
 
 /* Rows Wrapper */
@@ -69,11 +65,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 70px;
   }
-
   .block-row.reverse-row {
     direction: rtl;
   }
-
   .block-row.reverse-row > * {
     direction: ltr;
   }
@@ -94,16 +88,17 @@
 }
 
 .block-content h3 {
-  font-size: 2.2rem;
+  font-size: 28px;
   font-weight: 800;
   color: #0b1e48;
   margin-bottom: 16px;
+  line-height: 1.25;
 }
 
 .block-content p {
-  font-size: 0.98rem;
-  color: #475569;
-  line-height: 1.65;
+  font-size: 16px !important;
+  color: #475569 !important;
+  line-height: 1.7;
   margin-bottom: 28px;
 }
 
@@ -118,7 +113,6 @@
   .points-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .points-grid.two-col {
     grid-template-columns: auto auto;
     justify-content: start;
@@ -130,7 +124,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.95rem;
+  font-size: 16px;
   font-weight: 700;
   color: #0b1e48;
 }
@@ -483,4 +477,48 @@
 @keyframes floatRight {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
+}
+
+/* --- FULLY RESPONSIVE FIXES --- */
+@media (max-width: 768px) {
+  .why-choose-section {
+    padding: 24px 16px 60px 16px !important;
+  }
+  .why-choose-header {
+    margin-bottom: 36px !important;
+  }
+  .why-choose-header h2 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+  }
+  .why-choose-header p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+  .why-blocks-wrapper {
+    gap: 42px !important;
+  }
+  .block-row {
+    gap: 22px !important;
+  }
+  .block-number {
+    font-size: 3rem !important;
+  }
+  .block-content h3 {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .block-content p {
+    font-size: 13px !important;
+    margin-bottom: 18px !important;
+    line-height: 1.6 !important;
+  }
+  .point-item {
+    font-size: 13px !important;
+  }
+  .block-graphic-card {
+    height: 280px !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+  }
 }

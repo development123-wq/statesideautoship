@@ -5,6 +5,8 @@
   padding: 80px 24px;
   background-color: #ffffff;
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .comparison-container {
@@ -16,6 +18,9 @@
 .comparison-header {
   text-align: center;
   margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .comparison-subtitle {
@@ -27,17 +32,19 @@
 }
 
 .comparison-header h2 {
-  font-size: 2.4rem;
+  font-size: 44px !important;
   font-weight: 800;
-  color: #0b1e48;
-  line-height: 1.25;
+  color: #0b1e48 !important;
+  line-height: 1.15;
   margin-top: 10px;
+  letter-spacing: -0.6px;
 }
 
-@media (min-width: 768px) {
-  .comparison-header h2 {
-    font-size: 2.8rem;
-  }
+.comparison-header p{
+  font-size: 16px !important;
+  color: #475569 !important;
+  line-height: 1.7;
+  margin-top: 12px;
 }
 
 /* Grid Layout */
@@ -74,7 +81,6 @@
   }
 }
 
-/* Hover Effect: Border turns Red */
 .comparison-card:hover {
   border-color: #d90429;
   transform: translateY(-4px);
@@ -113,10 +119,11 @@
 }
 
 .card-content h3 {
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 800;
   color: #0b1e48;
   margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 /* Bullet Points */
@@ -133,9 +140,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.95rem;
-  color: #475569;
+  font-size: 16px !important;
+  color: #475569 !important;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .bullet-dot {
@@ -152,7 +160,7 @@
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 14px;
   text-decoration: none;
   width: fit-content;
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -161,4 +169,52 @@
 .comparison-btn:hover {
   background-color: #b80323;
   transform: translateY(-1px);
+}
+
+/* --- FULLY RESPONSIVE --- */
+@media (max-width: 600px) {
+  .comparison-section {
+    padding: 36px 14px !important;
+  }
+  .comparison-header {
+    margin-bottom: 28px !important;
+  }
+  .comparison-header h2 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+  }
+  .comparison-header p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+  .comparison-grid {
+    gap: 16px !important;
+  }
+  .comparison-card {
+    padding: 16px !important;
+    gap: 16px !important;
+    border-radius: 18px !important;
+  }
+  .card-image-box {
+    height: 190px !important;
+    width: 100% !important;
+    border-radius: 12px !important;
+  }
+  .card-content h3 {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+  .bullet-list {
+    margin-bottom: 16px !important;
+    gap: 8px !important;
+  }
+  .bullet-list li {
+    font-size: 13px !important;
+  }
+  .comparison-btn {
+    width: 100% !important;
+    text-align: center;
+    font-size: 13px !important;
+    padding: 11px 18px !important;
+  }
 }

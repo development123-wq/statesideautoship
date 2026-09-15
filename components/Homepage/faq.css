@@ -5,6 +5,8 @@
   padding: 40px 24px 60px 24px;
   background-color: #ffffff;
   font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .faq-container {
@@ -28,17 +30,12 @@
 }
 
 .faq-header h2 {
-  font-size: 2.3rem;
+  font-size: 44px !important;
   font-weight: 800;
-  color: #0b1e48;
-  line-height: 1.25;
+  color: #0b1e48 !important;
+  line-height: 1.15;
   margin-top: 8px;
-}
-
-@media (min-width: 768px) {
-  .faq-header h2 {
-    font-size: 2.8rem;
-  }
+  letter-spacing: -0.6px;
 }
 
 /* Accordion List */
@@ -85,7 +82,7 @@
 }
 
 .faq-question-text {
-  font-size: 1.15rem;
+  font-size: 18px !important;
   font-weight: 600;
   color: #0b1e48;
   line-height: 1.4;
@@ -150,16 +147,17 @@
 .faq-answer-content p {
   padding: 0 28px 24px 28px;
   margin: 0;
-  font-size: 1rem;
-  color: #475569;
+  font-size: 16px !important;
+  color: #475569 !important;
   line-height: 1.65;
 }
+
 /* Bada CTA Banner Container */
 .faq-cta-banner.large-banner {
   margin-top: 60px;
   width: 100%;
-  min-height: 220px; /* Container height badhane ke liye */
-  padding: 60px 50px; /* Vertical aur horizontal spacing badhayi hai */
+  min-height: 220px;
+  padding: 60px 50px;
   background: linear-gradient(rgba(10, 34, 64, 0.88), rgba(10, 34, 64, 0.88)),
               url("/bg-image.png") center/cover no-repeat;
   border-radius: 20px;
@@ -168,19 +166,21 @@
   align-items: center;
   color: #ffffff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 }
 
 .faq-cta-content h2 {
-  font-size: 2.5rem; /* Text size bada */
+  font-size: 32px !important;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #ffffff;
+  color: #ffffff !important;
   line-height: 1.2;
 }
 
 .faq-cta-content p {
-  color: #d1d5db;
-  font-size: 1.125rem;
+  color: #d1d5db !important;
+  font-size: 16px !important;
+  line-height: 1.6;
 }
 
 .faq-cta-actions {
@@ -224,7 +224,7 @@
   background: #b80000;
 }
 
-/* Mobile Responsive Adjustments */
+/* Responsive */
 @media (max-width: 900px) {
   .faq-cta-banner.large-banner {
     flex-direction: column;
@@ -243,5 +243,36 @@
   .btn-primary {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-section{
+    padding: 28px 14px 40px 14px !important;
+  }
+  .faq-header h2 {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+  }
+  .faq-question-btn{
+    padding: 14px 16px !important;
+  }
+  .faq-question-text {
+    font-size: 14px !important;
+  }
+  .faq-answer-content p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    padding: 0 16px 18px 16px !important;
+  }
+  .faq-cta-content h2{
+    font-size: 20px !important;
+  }
+  .faq-cta-content p{
+    font-size: 13px !important;
+  }
+  .faq-cta-banner.large-banner{
+    padding: 28px 18px !important;
+    border-radius: 16px !important;
   }
 }

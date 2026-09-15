@@ -37,14 +37,14 @@ export default function ContactUsPage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#CA0003]/20 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 max-w-2xl space-y-4">
-            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#CA0003] bg-white px-3.5 py-1.5 rounded-full shadow-sm">
+            <span className="inline-flex items-center gap-2 text-xs md:text-[13px] font-bold uppercase tracking-widest text-[#CA0003] bg-white px-3.5 py-1.5 rounded-full shadow-sm">
               <span className="w-2 h-2 rounded-full bg-[#CA0003] animate-pulse"></span>
               24/7 Logistics Support
             </span>
-            <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white">
+            <h1 className="text-[25px] sm:text-[44px] font-black tracking-tight leading-none text-white">
               Get in Touch <span className="text-[#CA0003]">.</span>
             </h1>
-            <p className="text-blue-100 text-base sm:text-lg leading-relaxed">
+            <p className="text-blue-100 text-[13px] sm:text-[16px] leading-relaxed">
               Have questions about our auto transport services? Contact our dispatch team today for immediate assistance and free freight quotes.
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function ContactUsPage() {
           <div className="lg:col-span-6 bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-lg flex flex-col justify-between">
             <div>
               <h2 className="text-3xl font-extrabold text-[#02254F]">Send Us a Message</h2>
-              <p className="text-slate-500 text-sm mt-2 mb-8">
+              <p className="text-slate-500 text-[13px] md:text-[16px] mt-2 mb-8">
                 Fill in your details below and our dispatch managers will reach out instantly.
               </p>
 

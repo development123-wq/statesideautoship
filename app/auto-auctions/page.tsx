@@ -232,13 +232,13 @@ export default function AutoAuctionsPage() {
                 Auction Logistics
               </span>
 
-              <h2 className="mt-3 text-3xl font-black leading-tight tracking-tight text-[#02254F] sm:text-4xl">
+              <h2 className="mt-3 text-[25px] font-black leading-tight tracking-tight text-[#0b1e48] sm:text-[44px]">
                 Why Partner With a Broker for Auctions?
               </h2>
 
               <div className="mt-5 h-1 w-14 rounded-full bg-[#CA0003]" />
 
-              <p className="mt-6 text-base leading-7 text-slate-500">
+              <p className="mt-6 text-[13px] sm:text-[16px] leading-7 text-[#475569]">
                 Move auction vehicles efficiently while reducing administrative
                 work, transportation delays, and unnecessary storage costs.
               </p>
@@ -246,7 +246,7 @@ export default function AutoAuctionsPage() {
 
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
               <div className="space-y-6">
-                <p className="text-[16px] leading-8 text-slate-600">
+                <p className="text-[13px] md:text-[16px] leading-8 text-slate-600">
                   Working with United Freeway Transportation can make a significant
                   difference when managing vehicles for auctions. Instead of
                   coordinating with individual carriers and handling multiple
@@ -295,7 +295,7 @@ export default function AutoAuctionsPage() {
             <span className="text-[11px] font-black uppercase tracking-[0.2em] text-[#CA0003]">
               Built Around Your Business
             </span>
-            <h2 className="mt-2 text-3xl font-black tracking-tight text-[#02254F]">
+            <h2 className="mt-2 text-[25px] md:text-[44px] font-black tracking-tight text-[#0b1e48]">
               A Smarter Way to Manage Auction Transport
             </h2>
           </div>
@@ -360,11 +360,11 @@ export default function AutoAuctionsPage() {
               Core Benefits
             </span>
 
-            <h2 className="mt-3 text-3xl font-black tracking-tight text-[#02254F] sm:text-4xl">
+            <h2 className="mt-3 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
               Why Auction Businesses Choose a Broker
             </h2>
 
-            <p className="mt-4 text-[15px] leading-7 text-slate-500">
+            <p className="mt-4 text-[16px]md:text-[13px] leading-7 text-[#475569]">
               From carrier sourcing to shipment coordination, simplify every
               part of your vehicle transportation workflow.
             </p>
@@ -417,11 +417,11 @@ export default function AutoAuctionsPage() {
               Fast & Transparent Pricing
             </span>
 
-            <h2 className="mt-5 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-5 text-[25px] font-black tracking-tight text-white sm:text-[44px]">
               Get Your Auto Transport Estimate
             </h2>
 
-            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-slate-300 sm:text-base">
+            <p className="mx-auto mt-4 max-w-2xl text-[13px] leading-7 text-[#ffffff] sm:text-[16px]">
               Generate an accurate shipping estimate in seconds and plan your
               auction transportation budget without waiting for multiple carrier
               quotes.
@@ -443,7 +443,7 @@ export default function AutoAuctionsPage() {
               Frequently Asked
             </span>
 
-            <h2 className="mt-3 text-3xl font-black tracking-tight text-[#02254F] sm:text-4xl">
+            <h2 className="mt-3 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[44px]">
               Auto Auction Transport FAQs
             </h2>
 
