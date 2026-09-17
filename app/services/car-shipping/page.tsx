@@ -116,8 +116,8 @@ export default function AboutUsPage() {
             <div className="nat2-row" style={{ position: "relative", padding: "22px 22px", background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "16px", marginLeft: "-8px" }}>
               <div className="nat2-line" style={{ position: "absolute", left: "-25px", top: "22px", width: "2px", height: "32px", background: "#d60000", transition: "all .3s ease" }}></div>
               <div className="nat2-num" style={{ position: "absolute", left: "-42px", top: "22px", width: "32px", height: "32px", background: "#d60000", color: "#fff", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: 800, transition: "all .3s ease" }}>03</div>
-              <h3 style={{ margin: "0 0 12px", fontSize: "19px", fontWeight: 700, color: "#0b1e48" }}>Why Choose United Freeway Transportation</h3>
-              <p className="nat2-para">United Freeway Transportation is a trusted auto transport brokerage connecting customers with reliable carriers nationwide. With personalized service, transparent pricing, and instant estimates, we simplify the entire shipping process. Our experienced agents monitor every shipment, ensuring smooth communication and timely delivery. Whether you're an individual, dealership, or business partner, United Freeway Transportation offers a professional, stress-free experience tailored to your needs.</p>
+              <h3 style={{ margin: "0 0 12px", fontSize: "19px", fontWeight: 700, color: "#0b1e48" }}>Why Choose Stateside Auto Ship</h3>
+              <p className="nat2-para">Stateside Auto Ship is a trusted auto transport brokerage connecting customers with reliable carriers nationwide. With personalized service, transparent pricing, and instant estimates, we simplify the entire shipping process. Our experienced agents monitor every shipment, ensuring smooth communication and timely delivery. Whether you're an individual, dealership, or business partner, Stateside Auto Ship offers a professional, stress-free experience tailored to your needs.</p>
             </div>
           </div>
         </div>

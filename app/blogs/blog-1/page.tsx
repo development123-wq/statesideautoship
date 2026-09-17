@@ -130,7 +130,7 @@ export default function BlogDetailPremium() {
               <div className="quote-icon">✦</div>
               <h4>Need a Quote?</h4>
               <p>Get instant car shipping quote in 30 seconds. No hidden fees.</p>
-              <Link href="/quote" className="quote-btn">Get Free Quote →</Link>
+              <Link href="/contact-us" className="quote-btn">Get Free Quote →</Link>
             </div>
 
           </div>

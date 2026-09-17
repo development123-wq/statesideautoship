@@ -26,3 +26,6 @@ body {
   font-family: "Inter", sans-serif;
   margin:0px !important;
 }
+#next-logo{
+  display:none !important;
+}

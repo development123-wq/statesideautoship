@@ -119,7 +119,7 @@ export default function AboutUsPage() {
           <span style={{ fontSize:"14px", fontWeight:800, color:"#fff" }}>03</span>
         </div>
         <div>
-          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose United Freeway Transportation (Boats)</h3>
+          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose Stateside Auto Ship (Boats)</h3>
           <p style={{ margin:0, fontSize:"16px", fontWeight:400, color:"#ffffff", lineHeight:1.7 }}>UFT connects marine clients with experienced boat transporters nationwide — providing accurate pricing, instant quotes, and dedicated coordination for safe, stress-free shipping of any vessel type.</p>
         </div>
       </div>

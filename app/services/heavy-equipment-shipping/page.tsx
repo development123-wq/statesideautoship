@@ -120,7 +120,7 @@ export default function AboutUsPage() {
           <span style={{ fontSize:"14px", fontWeight:800, color:"#fff" }}>03</span>
         </div>
         <div>
-          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose United Freeway Transportation (Heavy Equipment)</h3>
+          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose Stateside Auto Ship (Heavy Equipment)</h3>
           <p style={{ margin:0, fontSize:"16px", fontWeight:400, color:"#94a3b8", lineHeight:1.7 }}>UFT offers nationwide heavy equipment transport handled by certified carriers with proper equipment and permits. We deliver transparent pricing, instant quotes, and professional handling of large machinery.</p>
         </div>
       </div>

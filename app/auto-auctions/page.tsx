@@ -25,7 +25,7 @@ export default function AutoAuctionsPage() {
     },
     {
       q: "What payment options are available for auction transport?",
-      a: "United Freeway Transportation offers flexible payment methods, including QuickPay and Direct Deposit options, ensuring fast processing and zero hassle.",
+      a: "Stateside Auto Ship offers flexible payment methods, including QuickPay and Direct Deposit options, ensuring fast processing and zero hassle.",
     },
   ];
 
@@ -247,7 +247,7 @@ export default function AutoAuctionsPage() {
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
               <div className="space-y-6">
                 <p className="text-[13px] md:text-[16px] leading-8 text-slate-600">
-                  Working with United Freeway Transportation can make a significant
+                  Working with Stateside Auto Ship can make a significant
                   difference when managing vehicles for auctions. Instead of
                   coordinating with individual carriers and handling multiple
                   shipments yourself, you gain access to a wide network of licensed
@@ -310,7 +310,7 @@ export default function AutoAuctionsPage() {
               },
               {
                 title: "Quick Access to Loads",
-                text: "United Freeway Transportation works closely with SuperDispatch to post and dispatch loads through its TMS, giving carriers access to vehicles moving coast-to-coast.",
+                text: "Stateside Auto Ship works closely with SuperDispatch to post and dispatch loads through its TMS, giving carriers access to vehicles moving coast-to-coast.",
                 image:
                   "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop",
               },

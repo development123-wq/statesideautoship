@@ -237,7 +237,7 @@ export default function CarrierPage() {
           <div className="my-8 relative z-10 group">
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1519003722824-192d9978e841?q=80&w=800&auto=format&fit=crop"
+                src="../about11.jpg"
                 alt="Auto Transport Fleet"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />

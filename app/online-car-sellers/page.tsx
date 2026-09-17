@@ -34,12 +34,12 @@ export default function AboutUsPage() {
             <div style={{ display: "grid", gap: "16px" }}>
               <div className="eff-card">
                 <p className="desc-text">
-                  Shipping vehicles sold online comes with unique challenges: timing, coordination, and ensuring cars arrive in perfect condition. <span style={{ color: "#0b1e48", fontWeight: 600 }}>United Freeway Transportation</span> provides access to a nationwide network of licensed and insured carriers, making it easier to move vehicles to buyers across the country. The company handles scheduling, paperwork, insurance verification, and carrier coordination, so online sellers don't have to worry about managing multiple transporters or tracking shipments manually. This allows you to focus on marketing, closing sales, and building customer trust.
+                  Shipping vehicles sold online comes with unique challenges: timing, coordination, and ensuring cars arrive in perfect condition. <span style={{ color: "#0b1e48", fontWeight: 600 }}>Stateside Auto Ship</span> provides access to a nationwide network of licensed and insured carriers, making it easier to move vehicles to buyers across the country. The company handles scheduling, paperwork, insurance verification, and carrier coordination, so online sellers don't have to worry about managing multiple transporters or tracking shipments manually. This allows you to focus on marketing, closing sales, and building customer trust.
                 </p>
               </div>
               <div className="eff-card white">
                 <p className="desc-text">
-                  Online car sellers also gain flexibility and peace of mind through the expertise of United Freeway Transportation. Whether it's a single car sold to a distant buyer or multiple vehicles being shipped to different locations, the company ensures efficient, timely transport. Pre-vetted carriers reduce risk, digital tools provide real-time tracking and instant quotes, and an advanced cost calculator allows sellers to plan transport budgets quickly and accurately. With nationwide coverage and reliable service, every sale can be shipped confidently and professionally.
+                  Online car sellers also gain flexibility and peace of mind through the expertise of Stateside Auto Ship. Whether it's a single car sold to a distant buyer or multiple vehicles being shipped to different locations, the company ensures efficient, timely transport. Pre-vetted carriers reduce risk, digital tools provide real-time tracking and instant quotes, and an advanced cost calculator allows sellers to plan transport budgets quickly and accurately. With nationwide coverage and reliable service, every sale can be shipped confidently and professionally.
                 </p>
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px", marginTop: "4px" }}>
@@ -89,7 +89,7 @@ export default function AboutUsPage() {
         <div style={{ maxWidth: "1300px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: "1000px", margin: "0 auto 36px" }}>
             <h2 className="main-heading">
-              How United Freeway Transportation<br />Helps You <span style={{ color: "#d60000" }}>Grow</span>
+              How Stateside Auto Ship<br />Helps You <span style={{ color: "#d60000" }}>Grow</span>
             </h2>
           </div>
 

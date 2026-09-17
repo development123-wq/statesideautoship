@@ -6,10 +6,10 @@ export default function AboutUsPage() {
     <main>
       {/* Hero */}
    <HomeBanner 
-  title="United Freeway Transportation"
+  title="Stateside Auto Ship"
   desc="Safe and Modern Auto Transport driven by customer satisfaction."
   bgImage="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600&q=80"
-  ctaLink="/quote"
+  ctaLink="/contact-us"
 />
       {/* About Content */}
       <section style={{ background: "#fff", padding: "40px 20px" }}>
@@ -40,7 +40,7 @@ export default function AboutUsPage() {
       </h2>
 
       <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.9", marginBottom: "18px" }} className="desc-text">
-        We, United Freeway Transportation, a 5-star rated, BBB-accredited auto transport company, founded in 2021, and in just a few years, we&apos;ve shipped over 16,000 vehicles across 48 states, growing from a small operation into one of the most respected and trusted vehicle shipping companies in the U.S.
+        We, Stateside Auto Ship, a 5-star rated, BBB-accredited auto transport company, founded in 2021, and in just a few years, we&apos;ve shipped over 16,000 vehicles across 48 states, growing from a small operation into one of the most respected and trusted vehicle shipping companies in the U.S.
       </p>
 
       <p style={{ color: "#475569", fontSize: "16px", lineHeight: "1.9", marginBottom: "18px" }} className="desc-text">
@@ -306,7 +306,7 @@ export default function AboutUsPage() {
     <div className="why-lux-wrap">
       <div className="why-lux-left">
         <div>
-          <h2>Why United Freeway <span>Transportation?</span></h2>
+          <h2>Why Stateside Auto Ship?</h2>
           <div className="why-lux-line"></div>
           <p className="desc-text">Trusted by thousands for safe, reliable vehicle shipping across 48 states.</p>
         </div>
@@ -482,7 +482,7 @@ export default function AboutUsPage() {
           <li className="desc-text">Our dedicated agents maintain constant communication, providing updates and guidance at every stage.</li>
           <li className="desc-text">Customers enjoy a smooth and professional shipping experience from start to finish.</li>
         </ul>
-        <div className="bal-foot dark">This approach ensures high customer satisfaction, repeat business, and referrals, making United Freeway Transportation a trusted name in auto transport.</div>
+        <div className="bal-foot dark">This approach ensures high customer satisfaction, repeat business, and referrals, making Stateside Auto Ship a trusted name in auto transport.</div>
       </div>
 
       <div className="bal-card">

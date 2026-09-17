@@ -221,7 +221,7 @@ export default function RentalFleetPage() {
 
               <p className="text-[13px] md:text-[16px] leading-7 text-slate-600 sm:text-[16px]">
                 Rental companies also benefit from the flexibility and
-                expertise that United Freeway Transportation provides. Whether
+                expertise that Stateside Auto Ship provides. Whether
                 transferring multiple vehicles between branches, responding to
                 last-minute demand shifts, or moving cars for seasonal
                 repositioning, the company ensures smooth, reliable, and
@@ -241,7 +241,7 @@ export default function RentalFleetPage() {
             </span>
 
             <h2 className="mt-3 text-[25px] font-black tracking-tight text-[#0b1e48] sm:text-[42px]">
-              Why Car Rental Companies Choose United Freeway Transportation
+              Why Car Rental Companies Choose Stateside Auto Ship
             </h2>
 
             <p className="mt-3 text-[13px] md:text-[16px] leading-6 text-[#475569]">

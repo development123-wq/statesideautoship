@@ -146,8 +146,8 @@ export default function AboutUsPage() {
           <span style={{ fontSize:"14px", fontWeight:800, color:"#fff" }}>03</span>
         </div>
         <div>
-          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose United Freeway Transportation (Motorcycles)</h3>
-          <p style={{ margin:0, fontSize:"16px", fontWeight:400, color:"#ffffff", lineHeight:1.7 }}>United Freeway Transportation connects you with trusted fully insured motorcycle carriers nationwide. We provide personalized service, transparent pricing, and instant estimates for standard bikes, custom builds, and luxury motorcycles.</p>
+          <h3 style={{ margin:"0 0 8px", fontSize:"16px", fontWeight:700, color:"#ffffff" }}>Why Choose Stateside Auto Ship (Motorcycles)</h3>
+          <p style={{ margin:0, fontSize:"16px", fontWeight:400, color:"#ffffff", lineHeight:1.7 }}>Stateside Auto Ship connects you with trusted fully insured motorcycle carriers nationwide. We provide personalized service, transparent pricing, and instant estimates for standard bikes, custom builds, and luxury motorcycles.</p>
         </div>
       </div>
     </div>
