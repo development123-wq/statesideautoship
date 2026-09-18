@@ -181,7 +181,7 @@ export default function FAQPage() {
               <a href="/contact-us" className="w-full sm:w-auto px-6 py-3.5 bg-[#CA0003] hover:bg-[#a60002] text-white font-extrabold rounded-xl transition duration-200 shadow-md text-xs uppercase tracking-wider hover:scale-105 text-center">
                 Contact Support
               </a>
-              <a href="tel:6106248734" className="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-extrabold rounded-xl transition duration-200 border border-white/20 text-xs uppercase tracking-wider text-center">
+              <a href="tel:02152012010" className="w-full sm:w-auto px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-extrabold rounded-xl transition duration-200 border border-white/20 text-xs uppercase tracking-wider text-center">
                 Call (215) 201-2010
               </a>
             </div>

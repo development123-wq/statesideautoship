@@ -389,10 +389,10 @@ export default function DealershipsPage() {
                     {item.description}
                   </p>
 
-                  <div className="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4 text-[11px] font-bold uppercase tracking-wider text-slate-400 transition-colors group-hover:text-[#CA0003]">
+                  {/* <div className="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4 text-[11px] font-bold uppercase tracking-wider text-slate-400 transition-colors group-hover:text-[#CA0003]">
                     <span>Learn More</span>
                     <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                  </div>
+                  </div> */}
 
                 </div>
               );

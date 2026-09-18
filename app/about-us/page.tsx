@@ -561,7 +561,7 @@ export default function AboutUsPage() {
   <div style={{ maxWidth: "1300px", width: "100%", margin: "0 auto" }}>
     <div className="glance-top">
       <h2>Our Strong Points <span>at a Glance</span></h2>
-      <Link href="/contact" className="glance-btn">Get a Free Quote →</Link>
+      <Link href="/contact-us" className="glance-btn">Get a Free Quote →</Link>
     </div>
 
     <div className="white-glance">
@@ -729,7 +729,7 @@ export default function AboutUsPage() {
     Get in touch with our team today and receive a free, no-obligation quote.
   </p>
   <Link
-    href="/contact"
+    href="/contact-us"
     style={{
       display: "inline-block",
       background: "#d60000",

@@ -101,7 +101,7 @@ export default function FaqSection({ customFaqs }: FaqSectionProps): React.React
             <p>Get your free, no-obligation auto transport quote today.</p>
           </div>
           <div className="faq-cta-actions">
-            <a href="/contact" className="btn-secondary">
+            <a href="/contact-us" className="btn-secondary">
               Get In Touch &rarr;
             </a>
             <a href="/services" className="btn-primary">

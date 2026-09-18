@@ -283,7 +283,7 @@ export default function Header() {
           ))}
 
           <Link
-            href="/contact"
+            href="/contact-us"
             className="mobile-discover"
             onClick={closeMobileMenu}
           >

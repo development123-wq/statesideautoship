@@ -756,7 +756,7 @@ export default function AboutUsPage() {
   </p>
 
   <Link
-    href="/contact"
+    href="/contact-us"
     style={{
       display: "inline-block",
       background: "#d60000",

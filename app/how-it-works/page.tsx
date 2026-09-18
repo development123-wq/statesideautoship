@@ -48,7 +48,7 @@ export default function AboutUsPage() {
               <div className="f-group"><label>Email</label><input placeholder="Your Email Here" /></div>
               <div className="f-group"><label>Message</label><textarea placeholder="Your Message Here"></textarea></div>
               <button>Send</button>
-              <a href="tel:6105800610">📞 (610) 580-0610</a>
+              {/* <a href="tel:6105800610">📞 (610) 580-0610</a> */}
             </div>
           </div>
         </div>
